@@ -1,1 +1,4 @@
-TODO: describe your branch and push steps.
+TODO: After completing the Git exercise, record:
+- Your GitHub repo URL:
+- Branch name you created:
+- What you changed in the second commit:

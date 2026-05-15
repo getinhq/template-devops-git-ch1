@@ -9,5 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check starter files
-        run: test -f README.md && test -f notes.txt
+      - run: test -f README.md && test -f notes.txt
+      - name: notes.txt must be filled in
+        run: |
+          grep -q "TODO:" notes.txt && echo "Complete notes.txt (remove TODO lines)" && exit 1 || true
+          grep -q "GitHub repo URL" notes.txt
